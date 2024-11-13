@@ -34,11 +34,14 @@ public class Main
     System.out.println("Enter two strings: ");
     String input1 = sc.nextLine();
     String input2 = sc.nextLine();
-    String reverse1 = "";
+    String output = "";
     if (input1.length()==input2.length()){
-      for (int i1 = 0; i1 < input1.length(); i1++){
-        reverse1 += input1.substring()
+      for (int i1 = input1.length()-1; i1 >= 0; i1--){
+        String reverse1 = input1.substring(i1,i1+1);
+        String reverse2 = input2.substring(i1,i1+1);
+        output += (reverse2+reverse1);
       }
+      System.out.println(output);
     } else {
       System.out.println("error");
     }
